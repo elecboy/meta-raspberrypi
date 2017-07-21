@@ -1,8 +1,8 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
-LINUX_VERSION ?= "4.11.11"
+LINUX_VERSION ?= "4.11.12"
 
-SRCREV = "799fd62802fee2bf07834b8794d9c3a122ef9ec0"
+SRCREV = "d5c0e92fd7fc8b1be1559a0c179d8d25d13531a7"
 SRC_URI = "git://github.com/raspberrypi/linux.git;protocol=git;branch=rpi-4.11.y \
            file://02-rpi-cm3-dts-64.patch \
 "
