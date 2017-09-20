@@ -1,9 +1,9 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
-LINUX_VERSION ?= "4.11.12"
+LINUX_VERSION ?= "4.13.2"
 
-SRCREV = "d5c0e92fd7fc8b1be1559a0c179d8d25d13531a7"
-SRC_URI = "git://github.com/raspberrypi/linux.git;protocol=git;branch=rpi-4.11.y \
+SRCREV = "871ca96d47106ef72c54b0ebd6620c8e24343ff0"
+SRC_URI = "git://github.com/raspberrypi/linux.git;protocol=git;branch=rpi-4.13.y \
            file://02-rpi-cm3-dts-64.patch \
 "
 require linux-raspberrypi.inc
