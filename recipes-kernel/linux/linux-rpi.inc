@@ -53,6 +53,8 @@ do_configure_prepend() {
     # Localversion
     kernel_configure_variable LOCALVERSION "\"\""
     kernel_configure_variable LOCALVERSION_AUTO n
+    kernel_configure_variable SQUASHFS y
+    kernel_configure_variable OVERLAY_FS y
 
     # Udev quirks
     # Newer versions of udev mandate that sysfs doesn't have deprecated entries
@@ -104,8 +106,6 @@ do_configure_prepend() {
         kernel_configure_variable BLK_DEV_INITRD y
         kernel_configure_variable INITRAMFS_SOURCE ""
         kernel_configure_variable RD_GZIP y
-        kernel_configure_variable OVERLAY_FS y
-        kernel_configure_variable SQUASHFS y
         kernel_configure_variable UBIFS_FS y
     fi
     # Activate CONFIG_LEGACY_PTYS
